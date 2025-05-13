@@ -1,28 +1,31 @@
-##User Manual
+##  User Manual
+Step 1:
 
-1. Running the program will automatically download bip39.txt and rpc.txt, and then create 88.txt
+Run the program. It will automatically download bip39.txt and rpc.txt, and create 88.txt file.
+Step 2:
 
-When an ETH address with a balance greater than 0 is found, the ETH address, private key, and mnemonic words will be saved to 88.txt
+When an Ethereum address with a balance greater than 0 ETH is found, the Ethereum address, private key, and mnemonic will be saved to the 88.txt file.
+Step 3:
 
-RPC in rpc.txt can be added by oneself. The more RPC nodes there are, the smoother the software's queries will be, avoiding using a single RPC that exceeds the daily limit of RPC
+You can add more RPC nodes to the rpc.txt file. The more RPC nodes there are, the smoother the program will run and avoid hitting the daily limit of a single RPC node.
 
-##Reward the author
+##  Donate to the Author
 
-BTC：37TvGkvgTjKAmHW6ziFJ13VCVHbxMePdoy
+    BTC: 37TvGkvgTjKAmHW6ziFJ13VCVHbxMePdoy
 
-ETH：0x042ce53c4e305c5ad5415fef5ef4b415a48d199d
+    ETH: 0x042ce53c4e305c5ad5415fef5ef4b415a48d199d
 
-TRX：TZ355he1WXfiHwZGJKNCEvj4xygib87ayr
+    TRX: TZ355he1WXfiHwZGJKNCEvj4xygib87ayr
 
-##Author's GitHub
+##  Author's GitHub
 
 https://github.com/qskg8/ETH-Collider---brute-force-cracking
 
-##Telegram channel
+##  Telegram Channel
 
 https://t.me/btc88888eeth
 
-Disclaimers
+##  Disclaimer
 
-This software is provided as is without any warranty. Use at your own risk.
-This software is only used for educational purposes. Do not use it to crack someone else's wallet without their permission.
+This software is provided "as is" without any warranty. The use of this software is at your own risk.
+This software is for educational purposes only. Do not use it to crack someone else's wallet without permission.
