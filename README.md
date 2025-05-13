@@ -2,9 +2,11 @@
 Step 1:
 
 Run the program. It will automatically download bip39.txt and rpc.txt, and create 88.txt file.
+
 Step 2:
 
 When an Ethereum address with a balance greater than 0 ETH is found, the Ethereum address, private key, and mnemonic will be saved to the 88.txt file.
+
 Step 3:
 
 You can add more RPC nodes to the rpc.txt file. The more RPC nodes there are, the smoother the program will run and avoid hitting the daily limit of a single RPC node.
