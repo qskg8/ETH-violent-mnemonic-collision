@@ -1,0 +1,33 @@
+##  User Manual
+Step 1:
+
+Run the program. It will automatically download bip39.txt and rpc.txt, and create 88.txt file.
+
+Step 2:
+
+When an Ethereum address with a balance greater than 0 ETH is found, the Ethereum address, private key, and mnemonic will be saved to the 88.txt file.
+
+Step 3:
+
+You can add more RPC nodes to the rpc.txt file. The more RPC nodes there are, the smoother the program will run and avoid hitting the daily limit of a single RPC node.
+
+##  Donate to the Author
+
+    BTC: 37TvGkvgTjKAmHW6ziFJ13VCVHbxMePdoy
+
+    ETH: 0x042ce53c4e305c5ad5415fef5ef4b415a48d199d
+
+    TRX: TZ355he1WXfiHwZGJKNCEvj4xygib87ayr
+
+##  Author's GitHub
+
+https://github.com/qskg8/ETH-Collider---brute-force-cracking
+
+##  Telegram Channel
+
+https://t.me/btc88888eeth
+
+##  Disclaimer
+
+This software is provided "as is" without any warranty. The use of this software is at your own risk.
+This software is for educational purposes only. Do not use it to crack someone else's wallet without permission.
